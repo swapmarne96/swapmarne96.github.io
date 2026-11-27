@@ -1,70 +1,58 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Swapnil Marne — Lead QA Engineer and SDET focused on Java, Python, Playwright, API automation, performance testing and quality engineering.">
-  <title>Swapnil Marne | Lead QA Engineer</title>
-  <style>
-    :root{color-scheme:dark;--bg:#0b1020;--panel:#121a2d;--text:#edf2ff;--muted:#aab6d0;--line:#26334d;--accent:#72e0c1;--blue:#91b7ff}
-    *{box-sizing:border-box} body{margin:0;background:radial-gradient(ellipse at 80% 0%,#1c3150 0,transparent 38%),var(--bg);color:var(--text);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}
-    a{color:var(--blue);text-decoration:none}a:hover{color:var(--accent)} .wrap{max-width:1040px;margin:auto;padding:32px 22px 64px}
-    nav{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:8px 0 54px;color:var(--muted);font-size:14px}.brand{font-weight:750;color:var(--text);letter-spacing:.04em}
-    .hero{padding:42px 0 54px;max-width:820px}.eyebrow{color:var(--accent);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:12px}
-    h1{font-size:clamp(42px,7vw,72px);line-height:1.05;letter-spacing:-.045em;margin:18px 0}h1 span{color:var(--accent)}
-    .lead{font-size:clamp(18px,2.4vw,22px);color:var(--muted);max-width:760px}
-    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.btn{display:inline-block;padding:11px 17px;border-radius:10px;border:1px solid var(--line);font-weight:650}.primary{background:var(--accent);color:#07151a;border-color:var(--accent)}.primary:hover{color:#07151a;filter:brightness(1.06)}
-    section{margin-top:42px}.section-title{font-size:22px;margin:0 0 18px;letter-spacing:-.02em}.muted{color:var(--muted)}
-    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card{background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.015));border:1px solid var(--line);border-radius:16px;padding:21px}
-    .card h3{margin:0 0 8px;font-size:17px}.card p{margin:0;color:var(--muted);font-size:14px}.taglist{display:flex;flex-wrap:wrap;gap:9px}.tag{padding:7px 11px;border:1px solid var(--line);border-radius:999px;color:#dce6fb;background:#111a2b;font-size:13px}
-    .focus{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.focus .card{padding:16px}.focus strong{display:block;color:var(--accent);font-size:18px}
-    footer{margin-top:58px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
-    @media(max-width:680px){.grid,.focus{grid-template-columns:1fr}nav{padding-bottom:28px}.hero{padding-top:24px}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080d19">
+<meta name="description" content="Swapnil Marne — Lead QA Engineer and SDET. Test automation with Java, Selenium, Python, Playwright, REST Assured and quality engineering.">
+<title>Swapnil Marne | Lead QA Engineer · SDET</title>
+<style>
+:root{color-scheme:dark;--bg:#080d19;--panel:#101a2c;--panel2:#121f34;--text:#f2f6ff;--muted:#a6b4ca;--line:#263750;--cyan:#61e6d1;--blue:#8eb8ff;--max:1120px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 78% 4%,#17345a 0,transparent 31%),radial-gradient(ellipse at 5% 40%,#102a36 0,transparent 27%),var(--bg);color:var(--text);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit;text-decoration:none}a:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}
+header{padding:25px 0 0}.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-size:14px;font-weight:850;letter-spacing:.15em}.brand b{color:var(--cyan)}.navlinks{display:flex;gap:27px;color:var(--muted);font-size:13px}.navlinks a:hover{color:var(--cyan)}
+.hero{display:grid;grid-template-columns:1.5fr .8fr;align-items:center;gap:56px;padding:94px 0 76px;min-height:570px}.kicker{display:inline-flex;align-items:center;gap:9px;color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 14px var(--cyan)}
+h1{font-size:clamp(45px,7vw,78px);line-height:1.02;letter-spacing:-.06em;margin:22px 0 19px}h1 span{background:linear-gradient(90deg,var(--cyan),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}.intro{font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:680px;margin:0}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:9px;border:1px solid var(--line);font-size:13px;font-weight:750;transition:.2s}.btn.primary{background:var(--cyan);border-color:var(--cyan);color:#07151a}.btn:hover{transform:translateY(-2px);border-color:var(--cyan)}
+.hero-card{position:relative;border:1px solid #314762;border-radius:22px;padding:25px;background:linear-gradient(145deg,rgba(24,43,69,.96),rgba(12,21,36,.94));box-shadow:0 24px 70px #0005;overflow:hidden}.hero-card:before{content:"";position:absolute;width:180px;height:180px;border-radius:50%;background:#61e6d122;filter:blur(35px);right:-65px;top:-75px}.terminal-top{display:flex;gap:7px;margin-bottom:22px}.terminal-top i{width:8px;height:8px;border-radius:50%;background:#58708c}.code-label{font-size:11px;color:#7890ad;letter-spacing:.13em;text-transform:uppercase}.code-line{font:13px/2.1 ui-monospace,SFMono-Regular,Consolas,monospace;color:#d9e6f7}.code-line .key{color:var(--cyan)}.code-line .val{color:#a8c5ff}.hero-stat{border-top:1px solid var(--line);margin-top:17px;padding-top:17px;display:flex;justify-content:space-between;gap:12px;font-size:12px;color:var(--muted)}.hero-stat strong{color:var(--text);font-size:13px}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:14px;background:#0d1728cc;overflow:hidden}.metric{padding:19px 22px;border-right:1px solid var(--line)}.metric:last-child{border:0}.metric strong{display:block;font-size:23px;letter-spacing:-.04em;color:var(--cyan)}.metric span{font-size:12px;color:var(--muted)}
+section{padding-top:86px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:24px}.overline{color:var(--cyan);font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:800}.section-head h2{font-size:clamp(26px,4vw,36px);letter-spacing:-.04em;margin:5px 0 0}.section-head p{color:var(--muted);font-size:13px;max-width:390px;margin:0}
+.about{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}.panel{border:1px solid var(--line);background:linear-gradient(145deg,#132039cc,#0d1728dd);border-radius:15px;padding:25px}.panel p{margin:0;color:var(--muted)}.principles{display:grid;gap:12px}.principle{display:flex;gap:13px;align-items:flex-start}.icon{width:30px;height:30px;display:grid;place-items:center;border:1px solid #31506a;border-radius:9px;color:var(--cyan);flex:none;font-size:13px}.principle strong{display:block;font-size:13px}.principle span{display:block;color:var(--muted);font-size:12px}
+.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.project{display:flex;flex-direction:column;min-height:270px;border:1px solid var(--line);border-radius:15px;padding:22px;background:linear-gradient(155deg,#14243b,#0d1728);transition:.22s}.project:hover{transform:translateY(-5px);border-color:#4c8b9a;box-shadow:0 16px 40px #0003}.project-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}.project-icon{width:39px;height:39px;border-radius:11px;display:grid;place-items:center;background:#1b3547;color:var(--cyan);font-size:17px;font-weight:800}.project-type{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.project h3{font-size:18px;line-height:1.3;margin:0 0 9px}.project p{font-size:13px;color:var(--muted);margin:0 0 17px}.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto}.chip{font-size:10px;padding:4px 8px;border-radius:99px;border:1px solid #2b405a;color:#c3d2e6}.project-link{font-size:12px;color:var(--cyan);font-weight:750;margin-top:18px}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.skillbox h3{font-size:14px;margin:0 0 14px}.skill-tags{display:flex;flex-wrap:wrap;gap:8px}.skill-tags span{font-size:12px;padding:7px 10px;border-radius:7px;background:#18263b;color:#d5e1f1;border:1px solid #2a3b54}
+.contact{display:flex;justify-content:space-between;align-items:center;gap:25px;background:linear-gradient(110deg,#14283a,#102039);border:1px solid #2d5262;border-radius:16px;padding:28px}.contact h2{font-size:25px;margin:0 0 5px;letter-spacing:-.03em}.contact p{color:var(--muted);margin:0;font-size:13px}.contact-links{display:flex;flex-wrap:wrap;gap:10px}
+footer{margin-top:70px;padding:22px 0 35px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:15px;color:#8293aa;font-size:11px}
+@media(max-width:850px){.hero{grid-template-columns:1fr;gap:25px;padding:70px 0 50px;min-height:auto}.hero-card{max-width:520px}.project-grid{grid-template-columns:1fr 1fr}.about{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,1fr)}.metric:nth-child(2){border-right:0}.metric:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+@media(max-width:560px){.wrap{width:min(100% - 30px,var(--max))}.navlinks{gap:13px;font-size:11px}.brand{font-size:12px}.hero{padding-top:58px}h1{font-size:47px}.project-grid,.skills{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:10px}.contact{display:block}.contact-links{margin-top:18px}.metric{padding:15px}.metric strong{font-size:20px}footer{display:block}footer span{display:block;margin-top:5px}}
+</style>
 </head>
 <body>
-  <main class="wrap">
-    <nav><div class="brand">SWAPNIL MARNE</div><div><a href="#work">Projects</a> &nbsp;·&nbsp; <a href="#skills">Skills</a> &nbsp;·&nbsp; <a href="#contact">Contact</a></div></nav>
-    <header class="hero">
-      <div class="eyebrow">Quality Engineering · Test Automation · SDET</div>
-      <h1>Hi, I'm Swapnil.<br><span>I engineer quality.</span></h1>
-      <p class="lead">Lead QA Engineer with 10+ years of experience across test automation, framework development, API testing, performance engineering and enterprise application testing.</p>
-      <div class="actions">
-        <a class="btn primary" href="#work">Explore my work</a>
-        <a class="btn" href="https://github.com/swapmarne96">GitHub profile ↗</a>
-        <a class="btn" href="https://www.linkedin.com/in/swapnil-marne-33bb2a101/">LinkedIn ↗</a>
-      </div>
-    </header>
-    <section>
-      <h2 class="section-title">About</h2>
-      <div class="card"><p class="muted">I build maintainable automation solutions, improve test feedback cycles and help teams deliver reliable software. My experience spans Java automation, Python and Playwright, API and performance testing, messaging systems, database validation and CI/CD. I value readable test code, actionable diagnostics and quality checks integrated into delivery workflows.</p></div>
-    </section>
-    <section id="skills">
-      <h2 class="section-title">Technical toolkit</h2>
-      <div class="taglist">
-        <span class="tag">Java</span><span class="tag">Python</span><span class="tag">Playwright</span><span class="tag">Selenium</span><span class="tag">Pytest</span><span class="tag">REST Assured</span><span class="tag">API Testing</span><span class="tag">Apache JMeter</span><span class="tag">SQL</span><span class="tag">Kafka</span><span class="tag">Jenkins</span><span class="tag">GitHub Actions</span><span class="tag">AWS</span><span class="tag">CI/CD</span>
-      </div>
-    </section>
-    <section id="work">
-      <h2 class="section-title">Featured engineering projects</h2>
-      <div class="grid">
-        <article class="card"><h3><a href="https://github.com/swapmarne96/swapmarne96/tree/main/java-api-automation-framework">Java API Automation Framework ↗</a></h3><p>Java 17, REST Assured, TestNG and Maven. Reusable request specifications, CRUD coverage, response assertions, JSON schema validation and CI.</p></article>
-        <article class="card"><h3><a href="https://github.com/swapmarne96/swapmarne96/tree/main/playwright-python-qa-framework">Playwright Python QA Framework ↗</a></h3><p>Python, Playwright and Pytest. Page Object Model, reusable fixtures, smoke and regression tests, failure screenshots, HTML reporting and CI.</p></article>
-      </div>
-    </section>
-    <section>
-      <h2 class="section-title">Engineering approach</h2>
-      <div class="focus">
-        <div class="card"><strong>Maintainability</strong><span class="muted">Reusable, readable test architecture</span></div>
-        <div class="card"><strong>Confidence</strong><span class="muted">Business-focused validation and coverage</span></div>
-        <div class="card"><strong>Visibility</strong><span class="muted">Useful reports, diagnostics and CI feedback</span></div>
-      </div>
-    </section>
-    <section id="contact">
-      <h2 class="section-title">Let's connect</h2>
-      <div class="card"><p class="muted">Interested in quality engineering, automation architecture and SDET opportunities.</p><p style="margin-top:12px"><a href="https://www.linkedin.com/in/swapnil-marne-33bb2a101/">LinkedIn</a> &nbsp;·&nbsp; <a href="https://github.com/swapmarne96">GitHub</a></p></div>
-    </section>
-    <footer>© <span id="year">2026</span> Swapnil Marne · Built with a focus on quality, clarity and continuous improvement.</footer>
-  </main>
-</body>
-</html>
+<header class="wrap"><nav class="nav"><a class="brand" href="#">SWAPNIL<b>.</b>MARNE</a><div class="navlinks"><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Expertise</a><a href="#contact">Contact</a></div></nav></header>
+<main class="wrap">
+<section class="hero">
+<div><div class="kicker"><i class="dot"></i> Lead QA Engineer · SDET · Quality Engineering</div>
+<h1>Building software<br><span>quality at scale.</span></h1>
+<p class="intro">I'm Swapnil Marne — a Lead QA Engineer with 10+ years of experience designing automation solutions, strengthening test strategy and helping teams ship reliable software.</p>
+<div class="actions"><a class="btn primary" href="#projects">Explore my work ↘</a><a class="btn" href="https://www.linkedin.com/in/swapnil-marne-33bb2a101/" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a></div></div>
+<aside class="hero-card"><div class="terminal-top"><i></i><i></i><i></i></div><div class="code-label">Quality engineering profile</div>
+<div class="code-line"><span class="key">role</span> : <span class="val">"Lead QA Engineer"</span></div>
+<div class="code-line"><span class="key">experience</span> : <span class="val">"10+ years"</span></div>
+<div class="code-line"><span class="key">ui_automation</span> : <span class="val">["Selenium", "Playwright"]</span></div>
+<div class="code-line"><span class="key">api_automation</span> : <span class="val">["REST Assured"]</span></div>
+<div class="code-line"><span class="key">languages</span> : <span class="val">["Java", "Python"]</span></div>
+<div class="hero-stat"><span>Focus</span><strong>Automation · APIs · Quality</strong></div></aside>
+</section>
+<div class="metrics"><div class="metric"><strong>10+</strong><span>Years in QA & testing</span></div><div class="metric"><strong>3</strong><span>Automation project tracks</span></div><div class="metric"><strong>UI + API</strong><span>End-to-end test coverage</span></div><div class="metric"><strong>CI/CD</strong><span>Quality in delivery pipelines</span></div></div>
+<section id="about"><div class="section-head"><div><div class="overline">A little about me</div><h2>Quality is an engineering discipline.</h2></div><p>I combine hands-on automation with practical test leadership and a focus on maintainable engineering.</p></div>
+<div class="about"><div class="panel"><p>I build and maintain automation frameworks, validate complex application workflows and work with teams to improve feedback cycles. My experience includes Java-based automation, Python and Playwright, API testing, performance testing, messaging systems, database validation and CI/CD. I care about clear test design, useful failure diagnostics and measurable release confidence.</p></div>
+<div class="panel principles"><div class="principle"><div class="icon">01</div><div><strong>Reliable automation</strong><span>Reusable frameworks and stable test design</span></div></div><div class="principle"><div class="icon">02</div><div><strong>Risk-based quality</strong><span>Coverage aligned to business-critical journeys</span></div></div><div class="principle"><div class="icon">03</div><div><strong>Actionable feedback</strong><span>Reports, diagnostics and CI visibility</span></div></div></div></div></section>
+<section id="projects"><div class="section-head"><div><div class="overline">Selected work</div><h2>Automation across the stack.</h2></div><p>Three complementary tracks covering browser UI automation and service/API validation.</p></div>
+<div class="project-grid">
+<article class="project"><div class="project-top"><div class="project-icon">⌘</div><span class="project-type">UI automation · Java</span></div><h3>Selenium Java UI Framework</h3><p>Browser automation using Java, Selenium WebDriver and TestNG, with Page Object Model structure, reusable setup and maintainable UI tests.</p><div class="chips"><span class="chip">Java</span><span class="chip">Selenium 4</span><span class="chip">TestNG</span><span class="chip">Maven</span><span class="chip">POM</span></div><a class="project-link" href="https://github.com/swapmarne96/swapmarne96.github.io/tree/main/selenium-java-ui-automation-framework">Explore framework ↗</a></article>
+<article class="project"><div class="project-top"><div class="project-icon">◈</div><span class="project-type">UI automation · Python</span></div><h3>Playwright Python Framework</h3><p>Python and Playwright test automation with Pytest, reusable fixtures, page objects, browser coverage and CI-ready execution.</p><div class="chips"><span class="chip">Python</span><span class="chip">Playwright</span><span class="chip">Pytest</span><span class="chip">Page Objects</span></div><a class="project-link" href="https://github.com/swapmarne96/swapmarne96/tree/main/playwright-python-qa-framework">Explore project ↗</a></article>
+<article class="project"><div class="project-top"><div class="project-icon">⌁</div><span class="project-type">API automation · Java</span></div><h3>REST Assured API Framework</h3><p>Java API automation with reusable request setup, endpoint validation, response assertions and structured test execution.</p><div class="chips"><span class="chip">Java</span><span class="chip">REST Assured</span><span class="chip">TestNG</span><span class="chip">Maven</span><span class="chip">JSON</span></div><a class="project-link" href="https://github.com/swapmarne96/swapmarne96/tree/main/java-api-automation-framework">Explore project ↗</a></article>
+</div></section>
+<section id="skills"><div class="section-head"><div><div class="overline">Technical expertise</div><h2>Tools I work with.</h2></div><p>A practical toolkit spanning automation, quality engineering and delivery.</p></div>
+<div class="skills"><div class="panel skillbox"><h3>UI automation</h3><div class="skill-tags"><span>Selenium WebDriver</span><span>Playwright</span><span>Page Object Model</span><span>TestNG</span><span>Pytest</span></div></div><div class="panel skillbox"><h3>API & service testing</h3><div class="skill-tags"><span>REST Assured</span><span>Postman</span><span>REST APIs</span><span>Kafka</span><span>SQL validation</span></div></div><div class="panel skillbox"><h3>Languages & frameworks</h3><div class="skill-tags"><span>Java</span><span>Python</span><span>Maven</span><span>OOP</span><span>JSON</span></div></div><div class="panel skillbox"><h3>Performance & delivery</h3><div class="skill-tags"><span>JMeter</span><span>Jenkins</span><span>GitHub Actions</span><span>AWS</span><span>CI/CD</span></div></div></div></section>
+<section id="contact"><div class="contact"><div><h2>Let's build quality into every release.</h2><p>Open to connecting on quality engineering, automation architecture and SDET opportunities.</p></div><div class="contact-links"><a class="btn primary" href="https://www.linkedin.com/in/swapnil-marne-33bb2a101/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a class="btn" href="https://github.com/swapmarne96" target="_blank" rel="noreferrer">GitHub ↗</a></div></div></section>
+</main><footer class="wrap"><span>© 2026 Swapnil Marne</span><span>Designed around clarity, engineering and quality.</span></footer>
+</body></html>
