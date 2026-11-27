@@ -11,7 +11,6 @@ import org.testng.annotations.BeforeMethod;
 public class BaseTest {
     private static final Logger log = LogManager.getLogger(BaseTest.class);
     private static final ThreadLocal<WebDriver> DRIVER = new ThreadLocal<>();
-    protected WebDriver driver;
 
     public static WebDriver getDriver() {
         return DRIVER.get();
@@ -25,15 +24,13 @@ public class BaseTest {
         }
 
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--window-size=1920,1080");
-        options.addArguments("--disable-notifications");
+        options.addArguments("--window-size=1920,1080", "--disable-notifications");
         if (Boolean.parseBoolean(System.getProperty("headless", "false"))) {
             options.addArguments("--headless=new", "--no-sandbox", "--disable-dev-shm-usage");
         }
 
         WebDriver webDriver = new ChromeDriver(options);
         DRIVER.set(webDriver);
-        driver = webDriver;
         log.info("Started {} browser on thread {}", browser, Thread.currentThread().getId());
     }
 
@@ -46,7 +43,6 @@ public class BaseTest {
                 log.info("Browser session closed on thread {}", Thread.currentThread().getId());
             } finally {
                 DRIVER.remove();
-                driver = null;
             }
         }
     }
