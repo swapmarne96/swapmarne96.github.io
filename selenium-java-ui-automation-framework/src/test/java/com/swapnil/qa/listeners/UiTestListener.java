@@ -1,7 +1,8 @@
 package com.swapnil.qa.listeners;
 
 import com.swapnil.qa.base.BaseTest;
-import io.qameta.allure.Attachment;
+import io.qameta.allure.Allure;
+import java.io.ByteArrayInputStream;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
@@ -28,12 +29,13 @@ public class UiTestListener implements ITestListener {
         log.error("TEST FAILED: {}", result.getName(), result.getThrowable());
         WebDriver driver = BaseTest.getDriver();
         if (driver instanceof TakesScreenshot screenshotDriver) {
-            attachFailureScreenshot(screenshotDriver.getScreenshotAs(OutputType.BYTES));
+            try {
+                byte[] screenshot = screenshotDriver.getScreenshotAs(OutputType.BYTES);
+                Allure.addAttachment("Failure screenshot", "image/png",
+                        new ByteArrayInputStream(screenshot), ".png");
+            } catch (RuntimeException screenshotError) {
+                log.warn("Could not capture failure screenshot", screenshotError);
+            }
         }
-    }
-
-    @Attachment(value = "Failure screenshot", type = "image/png")
-    public byte[] attachFailureScreenshot(byte[] screenshot) {
-        return screenshot;
     }
 }
